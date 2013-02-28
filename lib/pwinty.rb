@@ -31,7 +31,7 @@ module Pwinty
     end
 
     post :set_submission_status, "/Orders/Status" do |resource|
-      resource.required :status, :orderId
+      resource.required :status, :id
     end
 
     post :add_photo, "/Photos" do |resource|
